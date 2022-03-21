@@ -45,3 +45,20 @@ cdv clsp disassemble "0xffff80ffff01ffff33ffa09f9418e8c0b470e458af0c9094173500a9
 ```python
 ((() (q (51 0x9f9418e8c0b470e458af0c9094173500a998632dc590228ede68a9e63ee7523e 1000 (0x9f9418e8c0b470e458af0c9094173500a998632dc590228ede68a9e63ee7523e)) (51 0x41ae68acad3aa95e2022d6ffae44f25ceaeb32f3798802e29e643cabc7821ed1 0x00e8d4a50c18) (60 0x0fdf6b481ebe57da3bba0db08414e52be10accea5f4d7084b3db5387b31629b9)) ()) (0x39f4057a115e10cb2091835d3326ca7848ed9c97fad60cad3fd729fe5cbc3c89 0x94f4647a716f5eb198e504cc44af7609e0358fe7b5a0e8792f34a51e46cbdbdf 0x00e8d4a51000) 0xa94440a6ffc5ada945d983b0c8d53a42ab165101efef719894e2c5110fd13738 (0xb717803605bef3a0a798678cee37fefe9719e3d1e8ec83c5e6b7db97cced26b7 0x0889d31190fd1389764d06b533d792cc35c721bc60eda0f992588ff9c3165e38 0x00e8d4a51000) (0xb717803605bef3a0a798678cee37fefe9719e3d1e8ec83c5e6b7db97cced26b7 0x47677e8553e0c9ef639762871bc6dbd9e7fb6dd41dda57189817fb44112a1ba0 0x00e8d4a51000) () ())
 ```
+
+## Encode the puzzle to get address
+```python
+ cdv encode 71a72546e183212922bd3a3542d57812a1f58c4fc6efe0c158676437d7fd2dcb   -p txch
+```
+```
+txch1wxnj23hpsvsjjg4a8g6594tcz2sltrz0cmh7ps2cvajr04la9h9s977u0m
+```
+
+## Generate 500 wallet address
+```python
+chia keys derive -f 2155433726 wallet-address -i 0 -n 500 -x txch
+```
+```
+Wallet address 0: txch1v5cd7dxkfnlrv6ungv7ksyvdfj4tw8ewqzjtr8fjveu3gtcwdd4q3dv6c4
+Wallet address 1: txch1d3nrl6lf4zs2nvwymderj0tex0z2p8chewt6y4n4naq684237kysjyfjx4
+```
