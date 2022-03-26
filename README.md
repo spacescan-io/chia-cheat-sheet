@@ -1,6 +1,6 @@
 # chia-devtools-cheat-sheet
 
-## God read to start
+## Good read to start
 https://mojopuzzler.org/mediawiki/index.php/Main_Page
 
 ## Get coin records
