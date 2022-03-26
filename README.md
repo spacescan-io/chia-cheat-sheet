@@ -1,5 +1,8 @@
 # chia-devtools-cheat-sheet
 
+## God read to start
+https://mojopuzzler.org/mediawiki/index.php/Main_Page
+
 ## Get coin records
 ```python
 cdv rpc coinrecords --by id 0xa94440a6ffc5ada945d983b0c8d53a42ab165101efef719894e2c5110fd13738
